@@ -36,6 +36,10 @@ coreHelpers.tags = require('./tags');
 coreHelpers.title = require('./title');
 coreHelpers.twitter_url = require('./twitter_url');
 coreHelpers.url = require('./url');
+coreHelpers.lowercase = require('./lowercase');
+coreHelpers.setvar = require('./setvar');
+coreHelpers.prepare_tags = require('./prepare_tags');
+coreHelpers.compare = require('./compare');
 
 registerAllCoreHelpers = function registerAllCoreHelpers() {
     // Register theme helpers
@@ -66,6 +70,11 @@ registerAllCoreHelpers = function registerAllCoreHelpers() {
     registerThemeHelper('twitter_url', coreHelpers.twitter_url);
     registerThemeHelper('facebook_url', coreHelpers.facebook_url);
     registerThemeHelper('url', coreHelpers.url);
+    registerThemeHelper('lowercase', coreHelpers.lowercase);
+    registerThemeHelper('setvar', coreHelpers.setvar);
+    registerThemeHelper('prepare_tags', coreHelpers.prepare_tags);
+    registerThemeHelper('compare', coreHelpers.compare);
+
 
     // Async theme helpers
     registerAsyncThemeHelper('ghost_foot', coreHelpers.ghost_foot);
